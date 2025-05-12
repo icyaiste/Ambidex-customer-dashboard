@@ -1,0 +1,69 @@
+@use "../../assets/styles/variables.scss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: variables.$main-font;
+  font-size: variables.$base-font-size;
+  font-weight: variables.$base-font-weight;
+  background-color: white;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 1rem;
+
+  > button {
+    margin-left: 1rem;
+    background-color: #ce0101; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+  .chartGrid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .chartWithSlider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    width: 98%
+  }
+
+  .chartWrapper {
+    width: 100%;
+    height: 400px;
+  }
+
+  .slideContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .slider {
+    width: 35%;
+    height: 25px;
+    background: #d3d3d3;
+  }
+

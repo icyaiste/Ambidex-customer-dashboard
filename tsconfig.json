@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": true,
+    "declaration": true, // Generate `.d.ts` files for references
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "types": ["node", "react", "react-dom"],
+    "lib": ["esnext", "dom"]
+  },
+  "include": ["src/**/*", "vite-env.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

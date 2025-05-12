@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true, // Generate `.d.ts` files for type declarations
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
+    "lib": ["esnext", "dom"]
+  },
+  "include": ["src/**/*", "vite-env.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

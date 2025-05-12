@@ -1,0 +1,16 @@
+@use "../../assets/styles/variables.scss";
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: variables.$main-font;
+  font-size: variables.$base-font-size;
+  font-weight: variables.$base-font-weight;
+
+  > h1 {
+    font-size: 3rem;
+    color: variables.$ambidex-green;
+  }
+}

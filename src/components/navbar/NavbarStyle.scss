@@ -1,0 +1,174 @@
+@use "../../assets/styles/variables.scss";
+
+body {
+  font-family: variables.$main-font;
+  font-size: variables.$base-font-size;
+  font-weight: variables.$base-font-weight;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: variables.$ambidex-green;
+  background-image: none;
+  height: 80px;
+  width: 100vw;
+
+  > .logo__large {
+    border: none;
+    max-width: 300px;
+
+    > .logo__img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+.logo_small {
+  display: none;
+
+  > .logo__img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > .sign__out {
+    display: none;
+  }
+
+  > a {
+    padding: 15px 30px 15px 15px;
+    color: #ffff;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo__small {
+  display: none;
+}
+
+//Big desktop
+@media screen and (min-width: 80rem) and (max-width: 90rem) {
+  nav {
+    height: 70px;
+
+    > .logo__large {
+      padding: 10px;
+    }
+  }
+}
+
+//Small desktop
+@media screen and (min-width: 64rem) and (max-width: 80rem) {
+  nav {
+    height: 60px;
+
+    > .logo__large {
+      height: 35px;
+      width: auto;
+      margin-left: 0;
+    }
+  }
+
+  .links {
+    max-width: 340px;
+    justify-content: flex-start;
+
+    > a,
+    button {
+      font-size: 1.1rem;
+    }
+  }
+
+  .sign__out {
+    display: none;
+  }
+}
+
+//Small tablet
+@media screen and (min-width: 37.5rem) and (max-width: 48rem) {
+  nav {
+    height: 60px;
+    flex-grow: 1;
+
+    > .logo__large {
+      display: none;
+    }
+
+    > .logo__small {
+      display: block;
+      height: 60px;
+      width: auto;
+    }
+  }
+
+  .links {
+    display: none;
+    /* Hide desktop links in mobile size*/
+  }
+
+  .sign__out {
+    display: flex;
+    padding: 0;
+    margin-right: 0.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  .links a {
+    font-size: 1.1rem;
+  }
+}
+
+//Small mobile
+@media screen and (min-width: 20rem) and (max-width: 30rem) {
+  nav {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    height: 40px;
+    padding-bottom: 0.4rem;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    > .logo__large {
+      display: none;
+    }
+
+    > .logo__small {
+      display: block;
+      height: 46px;
+      width: auto;
+    }
+
+    > .links {
+      margin-left: auto;
+      a {
+        display: none;
+      }
+    }
+    > .mobile__controls {
+      margin-right: 20px;
+    }
+  }
+
+  .sign__out {
+    display: flex;
+    padding: 0;
+    font-weight: variables.$base-font-weight;
+  }
+}

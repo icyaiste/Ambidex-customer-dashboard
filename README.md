@@ -1,11 +1,11 @@
 # Ambidex customer dashboard
-Dashboard for customer that I created for Ambidex company.
+Dashboard for customer that I created for Ambidex company. Created with Vite, using React, Typescript and SCSS.
 
 Dashboard is a calendar function to help customers visualize the sequences/runs in their stores. It allows to block a time window (to block a run) in case there is planned service for their fridge/freeze system. Furthermore you can see upcoming events and all historical runs - what date,time and in which store they've been executed. 
 
 There is also a functionality to get a personalized report of previous month with most important results which you can download or print directly from dashboard. 
 
-Also a(n unfinished) feature for chart/graph showing with real time data through connecting to a mqtt-broker. ![Screenshot 2025-05-09 140523](https://github.com/user-attachments/assets/4fa49645-3524-408e-9959-cc8209623409)
+Also a (unfinished) feature for chart/graph showing with real time data through connecting to a mqtt-broker. ![Screenshot 2025-05-09 140523](https://github.com/user-attachments/assets/4fa49645-3524-408e-9959-cc8209623409)
 ![Screenshot 2025-05-09 140454](https://github.com/user-attachments/assets/591b22a7-5572-4adc-a8e2-f130661344d0)
 ![Screenshot 2025-05-09 140547](https://github.com/user-attachments/assets/dbf7c774-445a-4bdc-8116-520f5712672d)
 ![Screenshot 2025-05-09 140630](https://github.com/user-attachments/assets/bfe060e5-d803-40c5-b5e1-644dc3e04437)
